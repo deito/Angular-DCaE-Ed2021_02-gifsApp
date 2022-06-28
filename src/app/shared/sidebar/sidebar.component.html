@@ -13,7 +13,7 @@
       <a href="#"
         class="list-group-item list-group-item-action"
         *ngFor="let elemento of historial; let i = index">
-        {{(i + 1)}} - {{ elemento }}
+        {{(i + 1)}} - {{ elemento | titlecase }}
       </a>
     </div>
 
