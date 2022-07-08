@@ -12,7 +12,8 @@
 
       <a href="#"
         class="list-group-item list-group-item-action"
-        *ngFor="let elemento of historial; let i = index">
+        *ngFor="let elemento of historial; let i = index"
+        (click)="buscar( elemento )">
         {{(i + 1)}} - {{ elemento | titlecase }}
       </a>
     </div>
